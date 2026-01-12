@@ -3,28 +3,26 @@ import * as Plugin from "./quartz/plugins"
 
 /**
  * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "wiki.zzik.com",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "ko-KR", 
+    baseUrl: "wiki.zzik.com", 
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Noto Sans KR",
+        body: "Noto Sans KR",
         code: "IBM Plex Mono",
       },
       colors: {
@@ -88,8 +86,8 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      Plugin.CNAME(), 
+      // Plugin.CustomOgImages(), 
     ],
   },
 }
