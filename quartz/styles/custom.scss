@@ -17,19 +17,24 @@
 }
 
 .recent-notes {
-  & > h3 {
-    font-size: 1rem !important; 
+  h3 {
+    font-size: 1rem !important;
     margin-bottom: 0.5rem !important;
   }
-
-  & ul.recent-ul {
-    & li {
-      & a {
-        font-size: 0.9rem !important; 
-        line-height: 1.2rem !important;
+  
+  .recent-ul {
+    padding-left: 0 !important;
+    
+    .recent-li {
+      margin-bottom: 0.4rem !important;
+      
+      a {
+        font-size: 0.8rem !important;
+        font-weight: 400 !important;
       }
-      & .meta {
-        font-size: 0.75rem !important;
+      
+      .meta {
+        font-size: 0.7rem !important;
       }
     }
   }
