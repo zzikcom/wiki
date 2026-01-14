@@ -1,6 +1,6 @@
 ---
 title: 「비대면 실명확인 관련 구체적 적용방안」
-slug: <% tp.file.title.toLowerCase().replace(/\s+/g, '-') %>
+slug: remote-identity-verification
 description:
 aliases: []
 tags: []
