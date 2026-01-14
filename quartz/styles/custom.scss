@@ -1,6 +1,7 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
 .page-title {
   font-size: 1.5rem; 
   margin: 1rem 0;  
@@ -16,10 +17,7 @@
   }
 }
 
-// quartz/styles/custom.scss
-
 .recent-notes {
-  // 1. "최근 게시물" 타이틀 스타일 (탐색기 제목과 통일)
   & > h3 {
     font-size: 1.1rem !important;
     font-weight: 600 !important;
@@ -54,4 +52,10 @@
       }
     }
   }
+}
+
+.explorer .explorer-content li > a {
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
 }
