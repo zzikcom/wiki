@@ -1,9 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration 
- */
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "wiki.zzik.com",
@@ -27,25 +24,25 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#fcfcfc",
+          lightgray: "#f2f2f2",
+          gray: "#666666",
+          darkgray: "#444444",
+          dark: "#222222",
+          secondary: "#3273dc",
+          tertiary: "#8b6fcb",
+          highlight: "rgba(50, 115, 220, 0.1)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#01242e",
+          lightgray: "#15343c",
+          gray: "#aaaaaa",
+          darkgray: "#dddddd",
+          dark: "#eeeeee",
+          secondary: "#8cc2dd",
+          tertiary: "#c3b1ee",
+          highlight: "rgba(140, 194, 221, 0.1)",
           textHighlight: "#b3aa0288",
         },
       },
@@ -87,7 +84,6 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       Plugin.CNAME(), 
-      // Plugin.CustomOgImages(), 
     ],
   },
 }
