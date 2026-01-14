@@ -55,7 +55,8 @@ export const defaultContentPageLayout: PageLayout = {
           node.displayName = "금융"
         }
         // 필요하신 폴더명을 계속 추가하세요
-      }),
+      }
+    }),
   ],
   right: [
     Component.Graph(),
