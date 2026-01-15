@@ -30,21 +30,26 @@ const defaultOptions: Options = {
     return node
   },
   sortFn: (a, b) => {
-    // Sort order: folders first, then files. Sort folders and files alphabeticall
-    if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
-      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
-      return a.displayName.localeCompare(b.displayName, undefined, {
-        numeric: true,
-        sensitivity: "base",
-      })
+    // 1. 폴더와 파일이 섞여 있을 경우: 폴더를 항상 위로 보냄
+    if (a.isFolder && !b.isFolder) return -1
+    if (!a.isFolder && b.isFolder) return 1
+
+    // 2. 둘 다 파일인 경우: 수정일(date) 기준 내림차순 정렬 (최신순)
+    if (!a.isFolder && !b.isFolder) {
+      const dateA = new Date(a.data?.date ?? 0).getTime()
+      const dateB = new Date(b.data?.date ?? 0).getTime()
+      
+      // 날짜가 같지 않다면 최신 날짜가 위로 오게 함
+      if (dateA !== dateB) {
+        return dateB - dateA
+      }
     }
 
-    if (!a.isFolder && b.isFolder) {
-      return 1
-    } else {
-      return -1
-    }
+    // 3. 둘 다 폴더이거나 날짜가 같은 파일인 경우: 이름순 정렬
+    return a.displayName.localeCompare(b.displayName, undefined, {
+      numeric: true,
+      sensitivity: "base",
+    })
   },
   filterFn: (node) => node.slugSegment !== "tags",
   order: ["filter", "map", "sort"],
