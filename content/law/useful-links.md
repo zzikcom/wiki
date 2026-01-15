@@ -19,4 +19,5 @@ draft: false
 	- 특이하게 '현행 안내서'의 목록을 따로 안내하고 있음
 - [금융위원회·금융감독원  「기업공시서식 작성기준」 등](https://dart.fss.or.kr/info/searchGuide.do)
 - [국세청 <공익법인 결산서류 등 공시 목록>](https://hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index_pp.xml&tmIdx=44&tm2lIdx=4405000000&tm3lIdx=4405020000)
+	- 회사 공시서류를 보는 금감원 DART보다는 말도 못하게 허접하고 불편하고 정보도 적지만, 그래도 공익법인 정보를 뭐라도 보려면...
 - [법원도서관  「대법원판례해설」 등](https://library.scourt.go.kr/search/pub/result?search_mode=detail&kind=1&pageNo=1&search_category=A0008&display=10&orderby_item=INSERT_DATE&orderby=DESC)
