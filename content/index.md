@@ -3,8 +3,8 @@ title: 🌵Zzikipedia
 description: Quartz로 제작된 zzik.com의 디지털 정원입니다.
 aliases: []
 tags: []
-date: 2026-01-12 19:44
-lastmod: 2026-01-14 16:19
+created: 2026-01-12 19:44
+modified: 2026-01-14 16:19
 draft: false
 ---
 [zzik.com](https://zzik.com) 부설 디지털 정원 페이지입니다.  
