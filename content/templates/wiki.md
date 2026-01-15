@@ -1,6 +1,6 @@
 ---
 title: <% tp.file.title %>
-permalink: <% tp.file.title.toLowerCase().replace(/\s+/g, '-') %>
+permalink: 
 description:
 aliases: []
 tags: []
