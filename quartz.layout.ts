@@ -37,12 +37,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.DesktopOnly(Component.RecentNotes({
+    Component.RecentNotes({
       title: "최근 게시물",
       limit: 15, // 보여줄 개수
       linkToPages: true, // 제목 클릭 시 해당 페이지로 이동
       filter: (f) => !f.slug.endsWith("index"), // 메인 페이지는 제외
-    })),
+    }),
     Component.Explorer(),
   ],
   right: [
