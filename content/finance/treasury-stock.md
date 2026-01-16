@@ -17,3 +17,8 @@ draft: false
 ## 개요
 
 회사가 과거 자신이 발행했던 주식을 매수하여 보유하고 있는 주식.
+
+## 참고자료
+
+- [정준혁, 「자기주식 제도의 현황과 개선과제」, 2023](https://vwserver.kif.re.kr/flexer/viewer.jsp?dir=evp&mid=30&cno=321860&fk=2023005684AK&ftype=pdf&ft=0)
+	- 관련 금융위원회 2023. 6. 5.자 보도자료 - [상장법인 자기주식 제도 개선 세미나 개최](https://www.fsc.go.kr/po010106/80129)
