@@ -79,6 +79,32 @@
   }
 }
 
+.callout-title {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important; 
+}
+
+.callout-title + .callout-content {
+  margin-top: 0.10rem !important;
+  padding-top: 0.10rem !important;   
+}
+
+.callout-content > p:first-child {
+  margin-top: 0.25rem !important;
+}
+
+.callout-content > p {
+  margin-bottom: 0.15rem !important;
+}
+
+.callout-content > p + :is(ul, ol) {
+  margin-top: 0.10rem !important;
+}
+
+.callout-content > :is(ul, ol) {
+  margin-top: 0.10rem !important;
+}
+
 .callout:not(:has(.callout-content > *)) {
   padding-block: 0.55rem !important; 
 }
