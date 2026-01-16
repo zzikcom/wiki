@@ -78,3 +78,10 @@
     }
   }
 }
+
+.callout-content {
+  & > p, & > ul, & > ol {
+    margin-top: 0.4rem !important; 
+    margin-bottom: 0.4rem !important;
+  }
+}
